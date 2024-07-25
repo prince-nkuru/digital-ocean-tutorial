@@ -56,7 +56,7 @@ const Slider = () => {
             key={index}
             src={photo}
             alt={`Slide ${index}`}
-            className={index === activeIndex ? 'active' : ''}
+            className={index === activeIndex ? 'active' : ''}    // this logic is the key point
           />
         ))}
       </div>
