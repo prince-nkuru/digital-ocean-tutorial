@@ -1,0 +1,28 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50;
+}
+.next {
+  padding: 20px;
+  font-size: 1rem;
+  background-color: cadetblue;
+  margin: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.previous {
+  padding: 20px;
+  font-size: 1rem;
+  background-color: cadetblue;
+  margin: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.content {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  transition:  5s ease-in-out;
+}
