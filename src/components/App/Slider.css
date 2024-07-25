@@ -16,7 +16,7 @@
   position: relative;
   width: 400px; /* Adjust width as needed */
   height: 400px; /* Adjust height as needed */
-  overflow: hidden;
+  overflow: hidden;    /*this hidden class is also crucial point in this project*/
   border-radius: 50%;
 }
 
