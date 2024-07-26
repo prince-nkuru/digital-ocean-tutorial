@@ -5,6 +5,7 @@ import AnimalCard from '../AnimalCard/AnimalCard';
 import './App.css';
 import Effecting from './UseEffect.js';
 import Slider from './Slider.js';
+import LogIn from '../logInForm/LogIn.js';
 
 const DisplayEmojiName = event => alert(event.target.id);
 
@@ -71,6 +72,10 @@ function App() {
  <div>
   <Effecting/>
   <Slider/>
+ </div>
+
+ <div>
+  <LogIn/>
  </div>
 
 
