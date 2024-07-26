@@ -1,0 +1,79 @@
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 150px;
+margin-bottom: 300px;
+background-color: black;
+padding-bottom: 30px;
+padding-top: 40px;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.text{
+font-size: 24px;
+font-weight: 700px;
+color: burlywood;
+}
+
+.underline{
+  width: 100px;
+  height: 40px;
+  color: darkolivegreen;
+}
+
+.inputs{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.input-place{
+  width: 400px;
+  height: 30px;
+  background-color: rgb(184, 182, 182);;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.input-place input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: rgb(184, 182, 182);
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  border-radius: 40px;
+
+}
+.submit-group {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submit {
+  background-color: rgb(98, 98, 248);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.forgot {
+  color: white;
+  font-weight: bold;
+}
+.forgot span {
+  color: rgb(22, 75, 22);
+  cursor: pointer;
+}
+
+.gray {
+  background-color: rgb(184, 182, 182);
+}
