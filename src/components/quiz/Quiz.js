@@ -25,7 +25,7 @@ const Quiz = () => {
       }else{
         e.target.classList.add('incorrect');
         setLock(true);
-        option_array[question.ans - 1].current.classList.add('correct')
+        option_array[question.ans - 1].current.classList.add('correct');
         
       }
     }
@@ -37,6 +37,10 @@ const Quiz = () => {
       setIndex(++index);
       setQuestion(Infos[index]);
       setLock(false)
+      option_array.map(option => {
+        option.current.classList.remove('incorrect');
+        option.current.classList.remove('incorrect');
+      })
     }
   }
 return (
