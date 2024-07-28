@@ -4,7 +4,7 @@ import Infos from '../../Assets/Infos';
 
 const Quiz = () => {
 
-  let [index, setIndex] = useState(4);
+  let [index, setIndex] = useState(0);
   let [question, setQuestion] = useState(Infos[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
@@ -29,15 +29,15 @@ const Quiz = () => {
         
       }
     }
-
-    const next = () => {
-      if (lock === true){
-        setIndex(++index);
-        setQuestion(Infos[index]);
-        setLock(false)
-      }
-    }
    
+  }
+
+  const next = () => {
+    if (lock === true){
+      setIndex(++index);
+      setQuestion(Infos[index]);
+      setLock(false)
+    }
   }
 return (
   <div className='container'>
@@ -50,7 +50,7 @@ return (
   <li ref={option3} onClick={(e) => {checkAns(e,3)}}>{question.option3}</li>
   <li ref={option4} onClick={(e) => {checkAns(e,4)}}>{question.option4}</li>
  </ul>
- <button className='next' onClick={() => setIndex(index + 1)}>Next</button>
+ <button className='next' onClick={next}>Next</button>
  <div className='index'>{index} of {Infos.length} question</div>
   </div>
 )
