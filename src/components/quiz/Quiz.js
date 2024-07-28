@@ -33,7 +33,8 @@ const Quiz = () => {
     const next = () => {
       if (lock === true){
         setIndex(++index);
-        setQuestion(Infos[index])
+        setQuestion(Infos[index]);
+        setLock(false)
       }
     }
    
