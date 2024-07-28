@@ -29,6 +29,13 @@ const Quiz = () => {
         
       }
     }
+
+    const next = () => {
+      if (lock === true){
+        setIndex(++index);
+        setQuestion(Infos[index])
+      }
+    }
    
   }
 return (
