@@ -6,6 +6,7 @@ import './App.css';
 import Effecting from './UseEffect.js';
 import Slider from './Slider.js';
 import LogIn from '../logInForm/LogIn.js';
+import Quiz from '../quiz/Quiz.js';
 
 const DisplayEmojiName = event => alert(event.target.id);
 
@@ -76,6 +77,10 @@ function App() {
 
  <div>
   <LogIn/>
+ </div>
+
+ <div>
+<Quiz/>
  </div>
 
 
