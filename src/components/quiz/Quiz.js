@@ -39,7 +39,8 @@ const Quiz = () => {
       setLock(false)
       option_array.map(option => {
         option.current.classList.remove('incorrect');
-        option.current.classList.remove('incorrect');
+        option.current.classList.remove('correct');
+        return null
       })
     }
   }
